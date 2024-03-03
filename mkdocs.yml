@@ -1,0 +1,30 @@
+site_name: Cluster.tools
+site_url: https://cluster.tools/
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      accent: indigo
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      accent: indigo
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+extra_css: [/stylesheets/extra.css]
+nav:
+  - Home: index.md
+  - Facade: facade.md
+  - Components:
+    - Cache: "/components/cache.md"
+    - Database: "/components/database.md"
+    - Messenger: "/components/database.md"
+    - Processor: "/components/database.md"
+    - Scheduler: "/components/database.md"
+    - Supervisor: "/components/supervisor.md"
