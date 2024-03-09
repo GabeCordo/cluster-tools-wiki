@@ -1,31 +1,25 @@
-# Welcome to cluster.tools
+# Cluster.tools
 
-The cluster.tools core is a _cloud_ orchestration tool for Lambda and ETL functions. The power of the core is through handling multiple functionalities that are required for cloud pipelines but distract developers from building the transformations functions that are most important for business or product requirements.
+The cluster.tools core is an orchestration tool for developers looking to simplify their development and operation of extract-transform-load (etl) functions. 
 
+### Why use Cluster.tools?
+Cluster.tools was developed from an operators perspective. When developing functions distributed in a private, public, or hybrid network what is the easiest way to version manage, load balance, monitor, and control access to these functions.
 
-[show core and processors]
+A standard interface definition using HTTP and JSON also allows you to create a wrapper on top of any software so that it can interface with cluster.tools. 
 
+### What are some Use Cases?
 
-It is important to note that the core itself does not provision (execute) any code itself, but rather is responsible for distributing calls to executables called _processors_ that are responsible for providing a common interface for the core to call code. The interface between the core and processor is an HTTP REST API that accepts data in a JSON format for sending/receiving content. The details of the interface are described in more detail within the _processor_ page.
+1. I want to load balance requests across several distributed deployments.
+2. I want to dynamically control access to functions in case of unexpected behavior.
+3. I want to update one unit of code without affecting service to unrelated units.
+4. I want to track the amount of data processed and how long it took.
+5. I want a central location to receive logs from distributed processes.
+6. I want a central configuration management solution that can be distributed across functions.
 
-[what is a cluster, how it works]
+### Why did you start this?
 
-[how modules isolate clusters]
+Cluster.tools was started in parallel with a separate project to handle deploying etl functions in golang. Over time it evolved into its own project that is continued to this day.
 
-[versioning to support multiple versions]
-
-[mounting / unmounting]
-
-[provisioning]
-
-
-Some of the functionality includes:
-1. Dynamic Registering of Processors
-2. Encapsulation/Isolation of Code into Register-able Modules 
-3. Module Versioning
-4. Dynamic Availability through Mounting and Unmounting
-4. Remote Procedure Calls
-5. Load Balancing Across Processors with a common registered module
-3. Configuration Management
-4. Short Term Caching
-5. Statistic Monitoring
+### Some Guides
+1. [Getting Start in 15 Minutes](in15min.md)
+2. [Implementing Processors](processors.md)

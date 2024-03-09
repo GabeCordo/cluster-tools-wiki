@@ -21,6 +21,7 @@ extra_css: [/stylesheets/extra.css]
 nav:
   - Home: index.md
   - Facade: facade.md
+  - Processors: processors.md
   - Components:
     - Cache: "/components/cache.md"
     - Database: "/components/database.md"
