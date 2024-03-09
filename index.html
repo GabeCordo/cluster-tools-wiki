@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-clustertools" class="md-skip">
+        <a href="#clustertools" class="md-skip">
           Skip to content
         </a>
       
@@ -238,6 +238,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -247,6 +258,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-clustertools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why use Cluster.tools?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some Use Cases?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-did-you-start-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why did you start this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Guides
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -278,6 +344,26 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="processors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Processors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -286,10 +372,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -300,8 +386,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Components
           </label>
@@ -460,6 +546,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-clustertools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why use Cluster.tools?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-some-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are some Use Cases?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-did-you-start-this" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why did you start this?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Some Guides
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -473,25 +603,27 @@
                   
 
 
-<h1 id="welcome-to-clustertools">Welcome to cluster.tools</h1>
-<p>The cluster.tools core is a <em>cloud</em> orchestration tool for Lambda and ETL functions. The power of the core is through handling multiple functionalities that are required for cloud pipelines but distract developers from building the transformations functions that are most important for business or product requirements.</p>
-<p>[show core and processors]</p>
-<p>It is important to note that the core itself does not provision (execute) any code itself, but rather is responsible for distributing calls to executables called <em>processors</em> that are responsible for providing a common interface for the core to call code. The interface between the core and processor is an HTTP REST API that accepts data in a JSON format for sending/receiving content. The details of the interface are described in more detail within the <em>processor</em> page.</p>
-<p>[what is a cluster, how it works]</p>
-<p>[how modules isolate clusters]</p>
-<p>[versioning to support multiple versions]</p>
-<p>[mounting / unmounting]</p>
-<p>[provisioning]</p>
-<p>Some of the functionality includes:
-1. Dynamic Registering of Processors
-2. Encapsulation/Isolation of Code into Register-able Modules 
-3. Module Versioning
-4. Dynamic Availability through Mounting and Unmounting
-4. Remote Procedure Calls
-5. Load Balancing Across Processors with a common registered module
-3. Configuration Management
-4. Short Term Caching
-5. Statistic Monitoring</p>
+<h1 id="clustertools">Cluster.tools</h1>
+<p>The cluster.tools core is an orchestration tool for developers looking to simplify their development and operation of extract-transform-load (etl) functions. </p>
+<h3 id="why-use-clustertools">Why use Cluster.tools?</h3>
+<p>Cluster.tools was developed from an operators perspective. When developing functions distributed in a private, public, or hybrid network what is the easiest way to version manage, load balance, monitor, and control access to these functions.</p>
+<p>A standard interface definition using HTTP and JSON also allows you to create a wrapper on top of any software so that it can interface with cluster.tools. </p>
+<h3 id="what-are-some-use-cases">What are some Use Cases?</h3>
+<ol>
+<li>I want to load balance requests across several distributed deployments.</li>
+<li>I want to dynamically control access to functions in case of unexpected behavior.</li>
+<li>I want to update one unit of code without affecting service to unrelated units.</li>
+<li>I want to track the amount of data processed and how long it took.</li>
+<li>I want a central location to receive logs from distributed processes.</li>
+<li>I want a central configuration management solution that can be distributed across functions.</li>
+</ol>
+<h3 id="why-did-you-start-this">Why did you start this?</h3>
+<p>Cluster.tools was started in parallel with a separate project to handle deploying etl functions in golang. Over time it evolved into its own project that is continued to this day.</p>
+<h3 id="some-guides">Some Guides</h3>
+<ol>
+<li><a href="in15min/">Getting Start in 15 Minutes</a></li>
+<li><a href="processors/">Implementing Processors</a></li>
+</ol>
 
 
 

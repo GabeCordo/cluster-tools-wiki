@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://cluster.tools/facade/">
+        <link rel="canonical" href="https://cluster.tools/processors/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../facade/">
       
-      
-        <link rel="next" href="../processors/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Facade - Cluster.tools</title>
+        <title>Processors - Cluster.tools</title>
       
     
     
@@ -75,6 +73,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#processors" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -107,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Facade
+              Processors
             
           </span>
         </div>
@@ -243,6 +246,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../facade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Facade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -252,29 +275,21 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
         
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
   
   <span class="md-ellipsis">
-    Facade
+    Processors
   </span>
   
 
-      </a>
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../processors/" class="md-nav__link">
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -283,6 +298,185 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-the-processor-communicate-with-the-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does the processor communicate with the core?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How does the processor communicate with the core?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connect Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httplocalhost8137processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://localhost:8137/processor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-module-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register Module Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Register Module Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httplocalhost8137module" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://localhost:8137/module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-updates-to-the-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Updates to the Core
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-the-core-communicate-with-the-processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does the core communicate with the processor?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How does the core communicate with the processor?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incoming-run-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incoming Run Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incoming Run Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httpprocessor-urlsupervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://processor-url/supervisor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -472,6 +666,175 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#basic-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Basic Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-does-the-processor-communicate-with-the-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does the processor communicate with the core?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How does the processor communicate with the core?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connect-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Connect Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httplocalhost8137processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://localhost:8137/processor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#register-module-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Register Module Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Register Module Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httplocalhost8137module" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://localhost:8137/module
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-updates-to-the-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending Updates to the Core
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-does-the-core-communicate-with-the-processor" class="md-nav__link">
+    <span class="md-ellipsis">
+      How does the core communicate with the processor?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How does the core communicate with the processor?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#incoming-run-request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Incoming Run Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Incoming Run Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#post-httpprocessor-urlsupervisor" class="md-nav__link">
+    <span class="md-ellipsis">
+      POST http://processor-url/supervisor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Implementation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Implementation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caching
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -486,9 +849,109 @@
                   
 
 
-  <h1>Facade</h1>
-
-
+<h1 id="processors">Processors</h1>
+<p>Processors are separate programs responsible for registering to a cluster.tools core and accepting incoming provision requests.</p>
+<p>The core and processor communicate by exchanging messages over HTTP REST endpoints encoding objects using JSON within the request or response body.</p>
+<p>Anyone can developer their own processor as long as it implements the interface defined by the core. This page documents the use cases and interfaces you can use as a guide to create your own processor.</p>
+<p>If you have implemented an interface for a new language and wish to add it to this page, raise a pull request on the wiki repository.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Language</th>
+<th style="text-align: left;">Developer</th>
+<th style="text-align: left;">Repository</th>
+<th style="text-align: left;">Template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Golang</td>
+<td style="text-align: left;">Gabriel Cordovado</td>
+<td style="text-align: left;">https://github.com/GabeCordo/processor-framework</td>
+<td style="text-align: left;"><a href="https://github.com/GabeCordo/processor-template">goto</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="basic-implementation">Basic Implementation</h2>
+<h3 id="how-does-the-processor-communicate-with-the-core">How does the processor communicate with the core?</h3>
+<p>The processor must implement a series of functions to register itself and its callable functions with the core. Its the equipment of letting the core know you exist and what its allowed to ask you to run.</p>
+<h4 id="connect-request">Connect Request</h4>
+<p>When the processor binary is started it shall create a new processor record on the core. The processor record holds two pieces of information, (1) the address the core should use when sending messages to the processor, (2) the port the processor is listening for incoming http requests.   </p>
+<h5 id="post-httplocalhost8137processor">POST http://localhost:8137/processor</h5>
+<pre><code class="language-json">{
+    &quot;host&quot;: &quot;localhost&quot;,
+    &quot;port&quot;: 5023
+}
+</code></pre>
+<h4 id="register-module-request">Register Module Request</h4>
+<p>When the processor binary is ready to receive requests from the core it shall create a module record. The module is a grouping of functions that share a common logical purpose. Modules also contain associative metadata like version and developer contact information so a user can better understand what they are using.</p>
+<p>In the example below, we are registering a module called <em>common</em> that contains one function <em>Vec</em>. We set the <em>on-load</em> specifier to <em>batch</em> signifying that it should be user callable.</p>
+<h5 id="post-httplocalhost8137module">POST http://localhost:8137/module</h5>
+<pre><code class="language-json">{
+    &quot;host&quot;: &quot;localhost&quot;,
+    &quot;port&quot;: 5023,
+    &quot;module&quot;: {
+        &quot;config&quot;: {
+            &quot;name&quot;: &quot;common&quot;,
+            &quot;version&quot;: 1,
+            &quot;contact&quot;: {
+                &quot;name&quot;: &quot;James Bond&quot;,
+                &quot;email&quot;: &quot;james.bond@gmail.com&quot;
+            },
+            &quot;exports&quot;: [
+                {
+                &quot;cluster&quot;: &quot;Vec&quot;,
+                &quot;mount&quot;: true,
+                &quot;config&quot;: {
+                    &quot;mode&quot;: &quot;Batch&quot;,
+                    &quot;on-crash&quot;: &quot;DoNothing&quot;,
+                    &quot;on-load&quot;: &quot;WaitAndPush&quot;,
+                    &quot;static&quot;: {
+                    &quot;t-functions&quot;: 1,
+                    &quot;l-functions&quot;: 1
+                    },
+                    &quot;dynamic&quot;: {
+                    &quot;t-function&quot;: {
+                        &quot;threshold&quot;: 2,
+                        &quot;growth-factor&quot;: 2
+                    },
+                    &quot;l-function&quot;: {
+                        &quot;threshold&quot;: 2,
+                        &quot;growth-factor&quot;: 2
+                    }
+                    }
+                }
+                }
+            ]
+        }
+    }
+}
+</code></pre>
+<h4 id="sending-updates-to-the-core">Sending Updates to the Core</h4>
+<p>TODO</p>
+<hr />
+<h3 id="how-does-the-core-communicate-with-the-processor">How does the core communicate with the processor?</h3>
+<p>The processor must implement an HTTP endpoint to receive run requests from the core.</p>
+<h4 id="incoming-run-request">Incoming Run Request</h4>
+<h5 id="post-httpprocessor-urlsupervisor">POST http://processor-url/supervisor</h5>
+<pre><code class="language-json">{
+    &quot;module&quot;: &quot;name&quot;,
+    &quot;cluster&quot;: &quot;function-name&quot;,
+    &quot;config&quot;: &quot;config-name&quot;,
+    &quot;supervisor&quot;: 0, // reference # of the run
+    &quot;metadata&quot;: {
+        &quot;key&quot;: &quot;value&quot;  // per-run parameters
+    }
+}
+</code></pre>
+<hr />
+<h2 id="advanced-implementation">Advanced Implementation</h2>
+<p>TODO</p>
+<h3 id="logging">Logging</h3>
+<p>TODO</p>
+<h3 id="caching">Caching</h3>
+<p>TODO</p>
 
 
 
