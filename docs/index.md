@@ -1,8 +1,12 @@
 # Cluster.tools
 
-The cluster.tools core is an orchestration tool for developers looking to simplify their development and operation of extract-transform-load (etl) functions. 
+Cluster.tools is an open-source orchestration and developer framework for simplifying the deployment of distributed etl functions. The simplicity comes from the rich set of deployment monitoring, high-availability, and auto-scaling tools provided out of the box.
 
-### Why use Cluster.tools?
+![](./assets/features.png)
+
+    [!] updating the content on this site is currently in progress
+
+### Built from an Operator & Developer Perspective
 Cluster.tools was developed from an operators perspective. When developing functions distributed in a private, public, or hybrid network what is the easiest way to version manage, load balance, monitor, and control access to these functions.
 
 A standard interface definition using HTTP and JSON also allows you to create a wrapper on top of any software so that it can interface with cluster.tools. 
@@ -19,7 +23,3 @@ A standard interface definition using HTTP and JSON also allows you to create a 
 ### Why did you start this?
 
 Cluster.tools was started in parallel with a separate project to handle deploying etl functions in golang. Over time it evolved into its own project that is continued to this day.
-
-### Some Guides
-1. [Getting Start in 15 Minutes](in15min.md)
-2. [Implementing Processors](processors.md)

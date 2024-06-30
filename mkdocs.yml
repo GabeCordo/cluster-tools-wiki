@@ -4,7 +4,7 @@ theme:
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
-      accent: indigo
+      primary: black
       scheme: default
       toggle:
         icon: material/brightness-7
@@ -12,7 +12,7 @@ theme:
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      accent: indigo
+      primary: black
       scheme: slate
       toggle:
         icon: material/brightness-4
@@ -20,12 +20,23 @@ theme:
 extra_css: [/stylesheets/extra.css]
 nav:
   - Home: index.md
-  - Facade: facade.md
-  - Processors: processors.md
-  - Components:
-    - Cache: "/components/cache.md"
-    - Database: "/components/database.md"
-    - Messenger: "/components/database.md"
-    - Processor: "/components/database.md"
-    - Scheduler: "/components/database.md"
-    - Supervisor: "/components/supervisor.md"
+  - Getting Started: in5min.md
+  - Concepts:
+    - Overview: "./concepts/overview.md"
+    - Mounting: "./concepts/mounting.md"
+    - Supervisors: "./concepts/supervisor.md"
+    - Architecture:
+      - Interfaces:
+        - Cluster: "./data-structures/cluster.md"
+      - Endpoints:
+        - Client Endpoint: "./endpoints/client.md"
+        - Processor Endpoint: "./endpoints/processor.md"
+      - Components:
+        - Cache: "./components/cache.md"
+        - Database: "./components/database.md"
+        - Messenger: "./components/messenger.md"
+        - Processor: "./components/processor.md"
+        - Scheduler: "./components/scheduler.md"
+        - Supervisor: "./components/supervisor.md"
+  - Developers:
+    - How to write a Processor?: processors.md
