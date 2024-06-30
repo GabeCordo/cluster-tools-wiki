@@ -341,15 +341,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#provision" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provision
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -958,15 +949,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#provision" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provision
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -986,6 +968,7 @@
 <p>The cluster.tools core is a <em>cloud</em> orchestration tool for Lambda and ETL functions. The process called the <strong>core</strong> is responsible for orchestrating a distributed number of <strong>processors</strong>. </p>
 <p>The <strong>processors</strong> are responsible for the compute while the <strong>core</strong> handles resource management.</p>
 <h2 id="before-we-begin">Before We Begin</h2>
+<p>I intended to move this process towards installing pre-built binaries over building from source. In the meantime, the <strong>go install</strong> command creates a binary in the GOPATH bin so ensure the path is added to your environments PATH.</p>
 <pre><code class="language-shell">export PATH=$(go env GOPATH)/bin:$PATH
 </code></pre>
 <h2 id="installation">Installation</h2>
@@ -1012,7 +995,7 @@ processor-framework init
 <h2 id="running-the-processor">Running the Processor</h2>
 <pre><code class="language-shell">processor-framework connect http://localhost:8137
 </code></pre>
-<h2 id="provision">Provision</h2>
+<!-- ## Provision -->
 
 
 
