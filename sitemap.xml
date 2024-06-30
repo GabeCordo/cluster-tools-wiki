@@ -2,52 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://cluster.tools/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cluster.tools/facade/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cluster.tools/in15min/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/in5min/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://cluster.tools/processors/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/cache/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/mounting/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/database/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/overview/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/messenger/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/supervisor/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/processor/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/architecture/algorithms/processor_select/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/scheduler/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/architecture/components/cache/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cluster.tools/components/supervisor/</loc>
-         <lastmod>2024-03-09</lastmod>
+         <loc>https://cluster.tools/concepts/architecture/components/database/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/components/messenger/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/components/processor/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/components/scheduler/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/components/supervisor/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/endpoints/client/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/endpoints/processor/</loc>
+         <lastmod>2024-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cluster.tools/concepts/architecture/interfaces/cluster/</loc>
+         <lastmod>2024-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
